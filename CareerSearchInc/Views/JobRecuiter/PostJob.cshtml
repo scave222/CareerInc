@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "PostJob";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-4 col-lg-3"></div>
+        <div class="col-md-4 col-lg-6 " id="form">
+            <h1 class="text-center text-secondary font-italic">Post Jobs</h1>
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" title="title" placeholder="Company Name" autofocus />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <select class="custom-select mr-sm-2" asp-items="Html.GetEnumSelectList<Industry>()"></select>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <select class="custom-select mr-sm-2" asp-items="Html.GetEnumSelectList<Country>()"></select>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <input type="date" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" placeholder="Email " />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Functional Areas" />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Job location" />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <select class="custom-select mr-sm-2" asp-items="Html.GetEnumSelectList<HighestQualification>()"></select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="number" class="form-control" placeholder="Years of Experience required " />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select class="custom-select mr-sm-2" asp-items="Html.GetEnumSelectList<RecruitmentServices>()"></select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select class="custom-select mr-sm-2" asp-items="Html.GetEnumSelectList<Walkings>()"></select>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <textarea class="form-control" placeholder="Other requirements" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="button" class="form-control btn btn-primary btn-block" value="Submit" />
+                </div>
+                <div class="form-group">
+                    <input type="button" class="form-control btn btn-primary btn-block" id="cancelBtn" value="Cancel" />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4 col-lg-3"></div>
+    </div>
+</section>
+
+
+

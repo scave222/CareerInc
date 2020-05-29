@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "TopJobs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">Tob Jobs</h1>
+
+    @foreach (var job in Model)
+    {
+        @if (job.Top == "Top")
+        {
+            <div id="accordion">
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-dark text-white text-decoration-none btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                @job.CompanyName
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                         data-parent="#accordion">
+                        <div class="card-body">
+                            <h1>Company Name: @job.CompanyName</h1>
+                            <h4>Location: @job.JobLocation</h4>
+                            <h4>Qualification: @job.HighestQualification</h4>
+                            <h4>Experience: @job.Experience</h4>
+                            <h4>Recruitment Services: @job.RecruitmentService</h4>
+                            <a class="btn btn-success " asp-controller="JobRecuiter" asp-action="Apply">Apply</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        }
+

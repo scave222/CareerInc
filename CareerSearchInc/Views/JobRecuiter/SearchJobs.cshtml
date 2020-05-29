@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewData["Title"] = "SearchJobs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<EditForm  OnValidSubmit="HandleValidSubmit">
+    <div class="row">
+        <div class="col-md-4 col-lg-3"></div>
+        <div class="col-md-4 col-lg-6 " id="form">
+            <h1 class="text-center text-secondary font-italic">Search Jobs</h1>
+
+            <div class="form-row">
+
+                <div class="form-group col-md-3">
+                    <select class="custom-select mr-sm-2" id="industry" asp-items="Html.GetEnumSelectList<Industry>()"></select>
+                </div>
+
+                <div class="form-group col-md-3">
+                    <select class="custom-select mr-sm-2" id="country" asp-items="Html.GetEnumSelectList<Country>()"></select>
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" class="form-control" id="funcarea" placeholder="Functional Areas" />
+                </div>
+
+                <div class="form-group col-md-3">
+                    <input type="text" class="form-control" id="jobloca" placeholder="Job location" />
+                </div>
+
+                <div class="form-group col-md-3">
+                    <select class="custom-select mr-sm-2" id="highqual" asp-items="Html.GetEnumSelectList<HighestQualification>()"></select>
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="number" class="form-control" id="yrsexp" placeholder="Years of Experience required " />
+                </div>
+                <div class="form-group col-md-3">
+                    <select class="custom-select mr-sm-2" id="reqservice" asp-items="Html.GetEnumSelectList<RecruitmentServices>()"></select>
+                </div>
+                <div class="form-group col-md-3">
+                    <select class="custom-select mr-sm-2" id="walk" asp-items="Html.GetEnumSelectList<Walkings>()"></select>
+                </div>
+            </div>
+
+           
+               
+
+                <div class="form-group">
+                    <input type="button" id="Button1" class="form-control btn btn-primary btn-block" value="Search" runat="model" OnClick="GreetingBtn_Click" />
+                </div>
+
+
+            </div>
+        </div>
+</EditForm>
+
+
+@*<script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON("<%=Url.Action("PopulateJournalOptions", "Evaluation",new { ID = Model.ID } ) %>", populateJSON);
+        });
+    </script>*@
+
+
+@*@foreach (var job in Model)
+{
+     @Button button = Submit as Button;
+    if (button != null)
+}*@
+
+
+
+
+@*<script runat="model">
+    const SearchJobs = document.getElementById("SearchJobs");
+    const industry = document.getElementById("industry");
+    const country = document.getElementById("country");
+    const funcarea = document.getElementById("funcarea");
+    const jobloca = document.getElementById("jobloca");
+    const highqual = document.getElementById("highqual");
+    const yrsexp = document.getElementById("yrsexp");
+    const reqservice = document.getElementById("reqservice");
+    const walk = document.getElementById("walk");
+    const searchResult = document.getElementById("searchResult");
+
+
+    void Page_Load(Object sender, EventArgs e)
+    {
+        // Manually register the event-handling method for
+        // the Click event of the Button control.
+        Button1.Click += new EventHandler(this.GreetingBtn_Click);
+    }
+
+    void GreetingBtn_Click(Object sender,
+        EventArgs e)
+    {
+        // When the button is clicked,
+        // change the button text, and disable it.
+
+        Button clickedButton = (Button)sender;
+        clickedButton.Text = "...button clicked...";
+        clickedButton.Enabled = false;
+
+        // Display the greeting label text.
+        GreetingLabel.Visible = true;
+    }
+
+
+    Button1.addEventListener("click", search);
+    function search() {
+        searchResult.innerHTML += `
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Industry</th>
+                                                    <th>Country</th>
+                                                    <th>Functional Area</th>
+                                                    <th>Job Location</th>
+                                                    <th>Highest qualification</th>
+                                                    <th>Years of experience</th>
+                                                    <th>Required service</th>
+                                                    <th>Walkin or Not</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                    `
+        foreach(var item in Model)
+        {
+            if <% (item == industry.value || item == country.value || item == funcarea.value || item == jobloca.value || item == highqual.value || item == yrsexp.value || item == reqservice.value || item == walk.value) %> {
+                searchResult.innerHTML +=
+
+                    <tr>
+                        <td>item.Industry</td>
+                        <td>item.Country</td>
+                        <td>item.FunctionalArea</td>
+                        <td>item.JobLocation</td>
+                        <td>item.HighestQualification</td>
+                        <td>item.Experience</td>
+                        <td>item.RecruitmentService</td>
+                        <td>item.WalkingOrNot</td>
+                        <tr>
+                                            </tbody>
+                                        </table>
+
+            };
+        };
+    }
+
+</script>*@
+
+

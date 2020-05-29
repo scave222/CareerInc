@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "AllJobs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">AllJobs</h1>
+
+@foreach (var job in Model)
+{
+        <h3>Company: @job.CompanyName</h3>
+        <h6>Location: @job.JobLocation</h6>
+        <h6>Qualification: @job.HighestQualification</h6>
+        <h6>Experience: @job.Experience</h6>
+        <h6>Recruitment Services: @job.RecruitmentService</h6>
+        <a class="btn btn-success " asp-controller="JobRecuiter" asp-action="Apply">Apply</a>
+        <hr />
+}

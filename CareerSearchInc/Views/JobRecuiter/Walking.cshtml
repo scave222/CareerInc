@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Walking";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h1 class="text-center">Walk in jobs</h1>
+
+
+@foreach (var job in Model)
+{
+    @if (job.WalkingOrNot == "Walking")
+    {
+        <h3>Company: @job.CompanyName</h3>
+        <h6>Location: @job.JobLocation</h6>
+        <h6>Qualification: @job.HighestQualification</h6>
+        <h6>Experience: @job.Experience</h6>
+        <h6>Recruitment Services: @job.RecruitmentService</h6>
+        <h6>Date of interview: @job.date</h6>
+        <a class="btn btn-success " asp-controller="JobRecuiter" asp-action="Apply">Apply</a><hr />
+    }
+}
+
+
