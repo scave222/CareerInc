@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\codebits-academy\\ASPDotNet\\CareerSearchInc\\CareerSearchInc\\CareerSearchInc.csproj": {}
+    "C:\\Users\\USER\\Desktop\\careerdotnet\\CareerSearchInc\\CareerSearchInc.csproj": {}
   },
   "projects": {
-    "C:\\codebits-academy\\ASPDotNet\\CareerSearchInc\\CareerSearchInc\\CareerSearchInc.csproj": {
+    "C:\\Users\\USER\\Desktop\\careerdotnet\\CareerSearchInc\\CareerSearchInc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\codebits-academy\\ASPDotNet\\CareerSearchInc\\CareerSearchInc\\CareerSearchInc.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\careerdotnet\\CareerSearchInc\\CareerSearchInc.csproj",
         "projectName": "CareerSearchInc",
-        "projectPath": "C:\\codebits-academy\\ASPDotNet\\CareerSearchInc\\CareerSearchInc\\CareerSearchInc.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\careerdotnet\\CareerSearchInc\\CareerSearchInc.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\codebits-academy\\ASPDotNet\\CareerSearchInc\\CareerSearchInc\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\careerdotnet\\CareerSearchInc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

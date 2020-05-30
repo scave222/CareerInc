@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "474izsswNBmI2Xma8iue63kNZwk/Au+9kepIjsyEIMZ3iWz/37VpUGNOndJWqMQwm8LNcEoLZmD+aiO8RQHg0A==",
+  "dgSpecHash": "uyc51gTOISTPK/x8Tyd1u5786HnT6KDNFdgl8pC+K+E0ft5yKD3e2ueWiZsuP7b1sv1epJZVff5Jup0d5+enuQ==",
   "success": true,
-  "projectFilePath": "C:\\codebits-academy\\ASPDotNet\\CareerSearchInc\\CareerSearchInc\\CareerSearchInc.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\careerdotnet\\CareerSearchInc\\CareerSearchInc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

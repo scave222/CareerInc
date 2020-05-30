@@ -22,6 +22,8 @@ namespace CareerSearchInc.Models
         public int GraduationYear { get; set; }
         public int YrsOfExp { get; set; }
         public string FunctionalAreas { get; set; }
+        public string Password { get; set; }
+        public string ConfirmPassword { get; set; }
 
         public IEnumerable<Country> AllCountry { get; set; }
         //public IEnumerable<HighestQualification> AllQualification { get; set; }
